@@ -11,7 +11,7 @@ class PackageRequestParamPart:
     def get_ascii(self):
         ascii_byte = self.__secret_to_byte()
         int_value = int(ascii_byte)
-        if is_letter(int_value) or is_enter(int_value) or is_space(int_value):
+        if is_ascii_letter(int_value) or is_enter(int_value) or is_space(int_value):
             return chr(int_value)
         else:
             return None

@@ -9,7 +9,7 @@ class PackageSequencePart:
         ascii_candidate = "".join(
             [self.__seq[candidate_indexes[0]], self.__seq[candidate_indexes[1]], self.__seq[candidate_indexes[2]]])
         int_value = int(ascii_candidate)
-        if is_letter(int_value) or is_enter(int_value) or is_space(int_value):
+        if is_ascii_letter(int_value) or is_enter(int_value) or is_space(int_value):
             return chr(int_value)
         else:
             return None
