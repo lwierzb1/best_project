@@ -1,5 +1,5 @@
 def is_letter(number):
-    return 128 > number > 65
+    return 122 > number > 64
 
 
 def is_enter(number):

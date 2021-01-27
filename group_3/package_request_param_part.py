@@ -21,7 +21,7 @@ class PackageRequestParamPart:
         for x in self.__SECRET:
             if x.islower():
                 byte = byte + "0"
-            elif x.isupper():
+            else:
                 byte = byte + "1"
         return byte
 
