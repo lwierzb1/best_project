@@ -16,7 +16,7 @@ def find_available_candidates():
 
 class AntygonaFinder:
     def __init__(self):
-        file = open("syn_1_seq_9.json", "r")
+        file = open("syn_1_seq_10.json", "r")
         self.TCP_PACKAGES = json.load(file)
 
     def write_antygona_candidates(self):
