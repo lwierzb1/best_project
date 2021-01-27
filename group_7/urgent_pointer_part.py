@@ -13,5 +13,5 @@ class UrgentPointerPart:
         int_value = int(self.__URGENT_POINTER)
         hex_value = hex(int_value)[2:]
         if len(hex_value) % 2 != 0:
-            hex_value = hex_value[:-1] + "0" + hex_value[-1:]
+            hex_value = "0" + hex_value
         return bytearray.fromhex(hex_value)
